@@ -26,7 +26,7 @@ html {
     transition: right 0.7s;
 }
 
-.humburger-menu span {
+/* .humburger-menu span {
     position: absolute;
     left: 5rem;
     width: 10rem;
@@ -41,14 +41,14 @@ html {
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s;
-}
+} */
 
 .change .humburger-menu:hover span {
     opacity: 1;
     visibility: visible;
 } 
 
-.humburger-menu span::before {
+/* .humburger-menu span::before {
     content: '';
     position: absolute;
     border-left: 1rem solid transparent;
@@ -58,7 +58,7 @@ html {
     top: 50%;
     left: -2rem;
     transform: translateY(-50%);
-}
+} */
 
 
 .change .humburger-menu {
