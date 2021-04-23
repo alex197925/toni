@@ -457,95 +457,70 @@ html {
 
 .contact-right {
   width: 65%;
-  background-color: #eee;
-}
-
-.input-group {
-  position: relative;
+  background-color: #9a9494;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-heading {
   font-family: "Josefin Slab", sans-serif;
   text-align: center;
   /* margin-bottom: 5rem; */
-  margin-top: 5rem;
-  font-size: 6rem;
+  margin-top: 3rem;
+  font-size: 5rem;
   font-weight: 300;
-  color: #272727;
+  color: rgb(239 232 232);
 }
 
-.contact-right form {
-  width: 100%;
-  margin-top: 5rem;
+.contact-items {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.field {
-  width: 35rem;
-  background-color: transparent;
-  border: none;
-  border-bottom: 0.2rem dashed #636363;
-  margin: 3rem 0;
-  font-size: 1.6rem;
-  padding: 1rem 1rem 0;
-  color: #4b4b4b;
-}
-
-.input-group input {
-  height: 4rem;
-}
-
-.input-group textarea {
-  min-height: 6rem;
-  max-width: 45rem;
-}
-
-/* Fieald on focus */
-.field:focus {
-  border-bottom-style: solid;
-}
-
-.field:focus ~ label {
-  transform: translateY(-3rem);
-  font-size: 1.1rem;
-}
-/* End Fieald on focus */
-
-.input-group label {
-  position: absolute;
-  left: 0;
+  flex-direction: column;
+  margin-top: 5rem;
   font-family: "Josefin Slab", sans-serif;
-  font-size: 1.4rem;
-  color: #4b4b4b;
-  text-transform: uppercase;
-  pointer-events: none;
-  transition: all 0.3s;
 }
 
-.input-label {
-  bottom: 4rem;
+.contact-item {
+  width: 72%;
+  padding: 2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  padding: 40px;
+  box-shadow: 0px 0px 10px #2b2c2c;
+  height: 0;
+  border-bottom: 100px solid #575353;
+  border-right: 30px solid transparent;
 }
 
-.message {
-  bottom: 6rem;
+.contact-item .icon {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.submit-btn {
-  width: 35rem;
-  height: 5rem;
-  margin-top: 2rem;
-  font-family: "Josefin Slab", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 1.6rem;
-  font-weight: 300;
-  background-color: rgb(58, 3, 3);
-  color: #fff;
-  border: none;
+.contact-item .icon i {
+  color: rgb(58, 3, 3);
   cursor: pointer;
 }
+
+.contact-info h1 {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contact-info h2 {
+  letter-spacing: 0.1rem;
+  color: #000;
+}
+
 /* End Contact */
 
 /* Footer */
