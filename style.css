@@ -77,7 +77,7 @@ html {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-  animation: scale 7s;
+  animation: scale 5s;
 }
 
 /* Effect img */
@@ -100,7 +100,7 @@ html {
 }
 
 .banner h1 {
-  font-family: "Baloo Da 2", sans-serif;
+  font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 10rem;
   font-weight: 300;
   line-height: 9rem;
@@ -227,15 +227,7 @@ html {
 .about-us {
   width: 100%;
   height: 100vh;
-  background-color: #f5f5f5;
-}
-
-.section-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* padding-top: 8rem;
-  padding-bottom: 4rem; */
+  /* background-color: #f5f5f5; */
 }
 
 .section-heading {
@@ -243,7 +235,8 @@ html {
   font-size: 5rem;
   font-weight: 300;
   color: #272727;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
 }
 
 .underline {
@@ -251,6 +244,7 @@ html {
   height: 0.3rem;
   background-color: rgb(199, 9, 9);
   margin-top: 2rem;
+  margin: 0 auto;
 }
 
 .services {
@@ -259,7 +253,7 @@ html {
   grid-template-rows: repeat(6, 6rem);
   grid-row-gap: 4rem;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .service {
@@ -296,33 +290,33 @@ html {
 }
 
 .service:nth-child(1) {
-  grid-column: 4/7;
-  grid-row: 1/3;
+  grid-column: 3/7;
+  grid-row: 1 / 3;
 }
 
 .service:nth-child(2) {
-  grid-column: 3/6;
-  grid-row: 3/5;
+  grid-column: 2/6;
+  grid-row: 3 / 5;
 }
 
 .service:nth-child(3) {
   grid-column: 4/7;
-  grid-row: 5/-1;
+  grid-row: 5 / -1;
 }
 
 .service:nth-child(4) {
   grid-column: 11/14;
-  grid-row: 1/3;
+  grid-row: 1 / 3;
 }
 
 .service:nth-child(5) {
   grid-column: 12/15;
-  grid-row: 3/5;
+  grid-row: 3 / 5;
 }
 
 .service:nth-child(6) {
   grid-column: 11/15;
-  grid-row: 5/-1;
+  grid-row: 5 / -1;
 }
 
 .about-us-img-wrapper {
@@ -361,8 +355,6 @@ html {
   width: 37rem;
   height: 35rem;
   margin-bottom: 10rem;
-  /* box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4); */
-  box-shadow: 1rem 1rem 0rem rgb(0 0 0 / 10%);
   border-radius: 0.5rem;
   position: relative;
 }
@@ -434,7 +426,7 @@ html {
 .contact {
   width: 100%;
   height: 100vh;
-  background-color: #575353;
+  background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,12 +444,12 @@ html {
   height: auto;
   background: url("./contact-img/contact.jpg") center no-repeat;
   background-size: cover;
-  filter: sepia(1);
+  background-position: left;
 }
 
 .contact-right {
   width: 65%;
-  background-color: #9a9494;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
 }
@@ -465,11 +457,10 @@ html {
 .contact-heading {
   font-family: "Josefin Slab", sans-serif;
   text-align: center;
-  /* margin-bottom: 5rem; */
   margin-top: 3rem;
   font-size: 5rem;
-  font-weight: 300;
-  color: rgb(239 232 232);
+  font-weight: 600;
+  color: rgb(72 70 70);
 }
 
 .contact-items {
@@ -482,7 +473,7 @@ html {
 }
 
 .contact-item {
-  width: 72%;
+  width: 50%;
   padding: 2rem;
   display: flex;
   text-align: center;
@@ -490,12 +481,9 @@ html {
   flex-direction: column;
   margin: 0 auto;
   margin-bottom: 3rem;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   padding: 40px;
-  box-shadow: 0px 0px 10px #2b2c2c;
-  height: 0;
-  border-bottom: 100px solid #575353;
-  border-right: 30px solid transparent;
+  box-shadow: 0px 0px 3px #2b2c2c;
 }
 
 .contact-item .icon {
@@ -505,7 +493,7 @@ html {
 }
 
 .contact-item .icon i {
-  color: rgb(58, 3, 3);
+  color: #000;
   cursor: pointer;
 }
 
@@ -557,5 +545,251 @@ footer {
   font-size: 3rem;
   color: #eee;
 }
-
 /* End Footer */
+
+@media (max-width: 1400px) {
+  .banner h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .banner p {
+    font-size: 3rem;
+  }
+
+  .banner button {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem;
+  }
+
+  .menu-link {
+    font-size: 3rem;
+  }
+  .service:nth-child(1) {
+    grid-column: 4/7;
+  }
+
+  .service:nth-child(2) {
+    grid-column: 2/6;
+  }
+
+  .service:nth-child(3) {
+    grid-column: 4/7;
+  }
+
+  .service:nth-child(4) {
+    grid-column: 11/14;
+  }
+
+  .service:nth-child(5) {
+    grid-column: 12/15;
+  }
+
+  .service:nth-child(6) {
+    grid-column: 11/15;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 7rem;
+  }
+  .about-us-img-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .about-us-img-wrapper img {
+    display: none;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .about-us-img-wrapper img {
+    display: none;
+  }
+
+  .about-us {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    overflow-y: scroll;
+  }
+  .section-heading {
+    font-family: "Mulish", sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #272727;
+    padding-top: 8rem;
+    text-align: center;
+  }
+  .service-header {
+    display: flex !important;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .service-header h3 {
+    font-size: 3.6rem;
+    color: rgb(199, 9, 9);
+  }
+  .service-text {
+    font-size: 2.6rem;
+    text-align: center;
+    width: 400px;
+    padding: 4rem;
+    margin: 0 auto;
+  }
+  .video {
+    margin-top: 4rem;
+  }
+  .card {
+    width: 25rem;
+    height: 25rem;
+  }
+  .contact {
+    background-color: transparent;
+  }
+  .contact-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-heading {
+    font-family: "Josefin Slab", sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(72 70 70);
+  }
+  .contact-left {
+    display: none;
+  }
+  .contact-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .contact-info h2 {
+    font-size: 3rem;
+  }
+
+  .contact-item {
+    width: 33rem;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  html {
+    font-size: 30%;
+  }
+  .banner h1 {
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 10rem;
+    letter-spacing: 0.2em;
+  }
+  .banner button {
+    width: 28rem;
+    height: 9rem;
+    font-size: 2.5rem;
+  }
+  .menu-link {
+    font-size: 6rem;
+  }
+  .phone-number a {
+    display: none;
+  }
+  .humburger-menu {
+    height: 4rem;
+    width: 5rem;
+  }
+  .services {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .about-us-img-wrapper img {
+    display: none;
+  }
+
+  .about-us {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #f5f5f5;
+    overflow-y: scroll;
+  }
+  .section-heading {
+    font-family: "Mulish", sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #272727;
+    padding-top: 8rem;
+    text-align: center;
+  }
+  .service-header {
+    display: flex !important;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .service-header h3 {
+    font-size: 3.6rem;
+  }
+  .service-text {
+    font-size: 3.6rem;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 37rem;
+    height: 35rem;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 2rem;
+  }
+  .contact {
+    background-color: transparent;
+  }
+  .contact-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-heading {
+    font-family: "Josefin Slab", sans-serif;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 600;
+    color: rgb(72 70 70);
+  }
+  .contact-left {
+    display: none;
+  }
+  .contact-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+  }
+
+  .contact-item {
+    width: 55rem;
+  }
+  .contact-info h2 {
+    font-size: 3rem;
+  }
+}

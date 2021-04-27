@@ -10,20 +10,6 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
   }, 400);
 });
 
-// $(".menu a").on("click", function (e) {
-//   if (this.hash !== "") {
-//     e.preventDefault();
-//     console.log(this.hash);
-//     const hash = this.hash;
-
-//     $("html, body").animate(
-//       {
-//         scrollTop: $(hash).offset().top,
-//       },
-//       0
-//     );
-//   }
-// });
 const scroll = new SmoothScroll('.sidebar a[href*="#"]', {
   speed: 200,
 });
